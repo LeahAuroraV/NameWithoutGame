@@ -25,4 +25,10 @@ public class menuScript : MonoBehaviour {
         startText.enabled = true;
         exitText.enabled = true;
     }
+    public void StartGame() {
+        Application.LoadLevel("Map1");
+    }
+    public void ExitGame() {
+        Application.Quit();
+    }
 }
