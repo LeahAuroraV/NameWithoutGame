@@ -13,8 +13,7 @@ public class menuScript : MonoBehaviour {
         exitText = exitText.GetComponent<Button>();
         exitConfirm.enabled = false;
 	}
-	
-	// Update is called once per frame
+
     public void ExitPress() {
         exitConfirm.enabled = true;
         startText.enabled = false;
@@ -26,7 +25,7 @@ public class menuScript : MonoBehaviour {
         exitText.enabled = true;
     }
     public void StartGame() {
-        Application.LoadLevel("Map1");
+        Application.LoadLevel("The_Cursed_Lands");
     }
     public void ExitGame() {
         Application.Quit();
